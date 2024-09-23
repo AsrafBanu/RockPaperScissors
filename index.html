@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone, Paper, Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stone Paper Scissors</h1>
+        </header>
+
+        <div class="game">
+            <div class="scoreboard">
+                <div class="score">
+                    <p>Player</p>
+                    <span id="player-score">0</span>
+                </div>
+                <div class="score">
+                    <p>Computer</p>
+                    <span id="computer-score">0</span>
+                </div>
+            </div>
+
+            <div class="choices">
+                <div class="choice" data-choice="rock">
+                    <img src="images/r.png" alt="Rock" class="icon">
+                </div>
+                <div class="choice" data-choice="paper">
+                    <img src="images/p.png" alt="Paper" class="icon">
+                </div>
+                <div class="choice" data-choice="scissors">
+                    <img src="images/s.png" alt="Scissors" class="icon">
+                </div>
+            </div>
+
+            <div class="result">
+                <p id="game-result">Choose an option!</p>
+                <p>Player chose: <span id="player-choice">-</span></p>
+                <p>Computer chose: <span id="computer-choice">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <button class="rules-btn" id="rules-btn">Rules</button>
+    <div class="rules-box hidden" id="rules-box">
+        <div class="rules-header">
+            <h2>Rules</h2>
+            <button class="close-btn" id="close-rules">&times;</button>
+        </div>
+        <p>⊛ Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+        <p>⊛ Decide if the countdown is "rock, paper, scissors, shoot" or just "rock, paper, scissors".</p>
+        <p>⊛ Settle minor decisions or play to pass the time.</p>
+        <p>⊛ If both lay the same, replay the round.</p>
+    </div>
+
+    <button class="next-btn">Next</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

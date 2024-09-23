@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loser-container">
+        <h1>Hurrayy!! You Won.</h1>
+        <button class="play-again-btn" id="play-again">Play Again</button>
+    </div>
+
+    <script>
+        document.getElementById('play-again').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Redirect back to the main game
+        });
+    </script>
+</body>
+</html>

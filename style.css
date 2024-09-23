@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #89C15E; /* Base background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4; /* Soft white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333; /* Dark grey text */
+    font-weight: 500;
+}
+
+.game {
+    background-color: #FFF; /* Clean white background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.score {
+    text-align: center;
+}
+
+.score p {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 500;
+}
+
+.score span {
+    font-size: 2.5em;
+    color: #333; /* Dark grey for simplicity */
+    font-weight: bold;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.choice {
+    margin: 0 10px;
+    padding: 15px;
+    border: 2px solid #EAEAEA; /* Light grey for soft borders */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #FFF; /* Clean white choice buttons */
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Slight hover effect */
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+}
+
+.result p {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* Rules Button */
+.rules-btn {
+    background-color: #EAEAEA; /* Soft light grey */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.rules-btn:hover {
+    background-color: #DADADA; /* Slightly darker hover effect */
+}
+
+.rules-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    border: 2px solid #EAEAEA;
+}
+
+.hidden {
+    display: none;
+}
+
+.rules-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rules-header h2 {
+    font-size: 1.4em;
+    margin: 0;
+    color: #333;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+/* Winner and Loser Pages */
+.winner-container, .loser-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #FFF; /* White text for winner/loser messages */
+}
+
+.play-again-btn {
+    background-color: #EAEAEA; /* Light grey button */
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.play-again-btn:hover {
+    background-color: #DADADA; /* Slightly darker hover effect */
+}
+
+/* Next Button */
+.next-btn {
+    background-color: #EAEAEA; /* Light grey button */
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.next-btn:hover {
+    background-color: #DADADA; /* Slightly darker hover effect */
+}
